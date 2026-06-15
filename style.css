@@ -121,7 +121,8 @@ img, svg { display: block; }
   border: none;
   background: transparent;
   color: var(--ink-soft);
-  padding: 7px 13px;
+  padding: 7px 10px;
+  min-width: 42px; 
   border-radius: 999px;
   cursor: pointer;
   transition: all var(--speed-fast) var(--ease);

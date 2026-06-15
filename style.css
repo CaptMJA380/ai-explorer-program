@@ -96,7 +96,7 @@ img, svg { display: block; }
 
 .controls {
   position: fixed;
-  top: 40px;
+  top: 70px;
   right: 20px;
   z-index: 100;
   display: flex;

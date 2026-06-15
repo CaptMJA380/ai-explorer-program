@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Explorer Program — Aruna's Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light" data-lang="en">
+
+  <!-- ============ CONTROLS ============ -->
+  <div class="controls">
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="hi">हि</button>
+      <button class="lang-btn" data-lang="mr">मर</button>
+    </div>
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+      <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+      <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav">
+    <div class="nav-mark">
+      <span class="nav-mark-icon">A</span>
+      <span class="nav-mark-text">Aruna's Academy</span>
+    </div>
+    <div class="nav-links">
+      <a href="#program">Program</a>
+      <a href="#weeks">Roadmap</a>
+      <a href="#projects">Projects</a>
+      <a href="#enroll" class="nav-cta">Enroll</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow" data-i18n="hero.eyebrow">A 6-week live online program</p>
+      <h1 class="hero-title">
+        <span data-i18n="hero.line1">From zero</span>
+        <span class="hero-title-accent" data-i18n="hero.line2">to your own AI app.</span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero.sub">
+        Python, Django and Machine Learning — taught from the absolute basics.
+        By the end, every student walks away with two working projects:
+        an AI chatbot and a prediction model they built themselves.
+      </p>
+      <div class="hero-actions">
+        <a href="#weeks" class="btn btn-primary" data-i18n="hero.cta1">See the 6-week roadmap</a>
+        <a href="#enroll" class="btn btn-ghost" data-i18n="hero.cta2">Book a free demo</a>
+      </div>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">0</span>
+          <span class="hero-meta-label" data-i18n="hero.meta1">prior coding experience required</span>
+        </div>
+        <div class="hero-meta-divider"></div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">2</span>
+          <span class="hero-meta-label" data-i18n="hero.meta2">real projects in your portfolio</span>
+        </div>
+        <div class="hero-meta-divider"></div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-num">18</span>
+          <span class="hero-meta-label" data-i18n="hero.meta3">live sessions, Mon · Wed · Fri</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ WHY / PROGRAM OVERVIEW ============ -->
+  <section class="section program" id="program">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="program.eyebrow">Why this program</p>
+      <h2 data-i18n="program.title">Built for students who've never written a line of code.</h2>
+    </div>
+    <div class="program-grid">
+      <div class="program-card">
+        <div class="program-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"></path></svg>
+        </div>
+        <h3 data-i18n="program.card1.title">Starts at the absolute basics</h3>
+        <p data-i18n="program.card1.body">No prior coding knowledge needed. We begin with what a variable is, and build up — one concept at a time — until you're writing real applications.</p>
+      </div>
+      <div class="program-card">
+        <div class="program-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M9 9h6v6H9z"></path></svg>
+        </div>
+        <h3 data-i18n="program.card2.title">Live, not recorded</h3>
+        <p data-i18n="program.card2.body">Every session is live online — small batch, direct interaction, real-time doubt solving. Mon, Wed, Fri for six weeks.</p>
+      </div>
+      <div class="program-card">
+        <div class="program-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+        </div>
+        <h3 data-i18n="program.card3.title">You build the whole thing</h3>
+        <p data-i18n="program.card3.body">Not a tutorial you watch — a project you ship. By week 6 you'll have an AI chatbot and a machine learning model, both running and demoable.</p>
+      </div>
+      <div class="program-card">
+        <div class="program-card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 100-6 3 3 0 000 6z"></path><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"></path></svg>
+        </div>
+        <h3 data-i18n="program.card4.title">Built for your career</h3>
+        <p data-i18n="program.card4.body">Everything maps to skills employers ask about: Python, web development with Django, and the fundamentals of machine learning.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE BUILD PATH (signature element) ============ -->
+  <section class="section build-path" id="weeks">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="path.eyebrow">The six-week build</p>
+      <h2 data-i18n="path.title">Watch what you're building, grow.</h2>
+      <p class="section-sub" data-i18n="path.sub">Each week adds one new layer — by the end, they all connect into two complete, working applications.</p>
+    </div>
+
+    <div class="path-wrap">
+      <svg class="path-line" viewBox="0 0 100 1200" preserveAspectRatio="none" aria-hidden="true">
+        <path class="path-line-bg" d="M50,0 L50,1200" />
+        <path class="path-line-fg" d="M50,0 L50,1200" />
+      </svg>
+
+      <div class="path-steps">
+
+        <article class="path-step" data-week="1">
+          <div class="path-node">
+            <span class="path-node-num">01</span>
+          </div>
+          <div class="path-card">
+            <p class="path-week" data-i18n="week1.label">Week 1</p>
+            <h3 data-i18n="week1.title">Python Foundations</h3>
+            <p data-i18n="week1.body">Variables, data types, conditionals, loops, and functions — the building blocks every program is made of.</p>
+            <div class="path-tags">
+              <span data-i18n="week1.tag1">Variables &amp; Loops</span>
+              <span data-i18n="week1.tag2">Functions</span>
+              <span data-i18n="week1.tag3">Lists</span>
+            </div>
+            <div class="path-visual" data-visual="python">
+              <div class="code-window">
+                <div class="code-dots"><span></span><span></span><span></span></div>
+                <div class="code-line"><span class="code-kw">def</span> <span class="code-fn">average</span>(marks):</div>
+                <div class="code-line code-indent"><span class="code-kw">return</span> sum(marks) / len(marks)</div>
+                <div class="code-line code-cursor">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="path-step" data-week="2">
+          <div class="path-node">
+            <span class="path-node-num">02</span>
+          </div>
+          <div class="path-card">
+            <p class="path-week" data-i18n="week2.label">Week 2</p>
+            <h3 data-i18n="week2.title">Python Deep Dive + Web Basics</h3>
+            <p data-i18n="week2.body">Dictionaries, object-oriented programming, working with APIs, and just enough HTML/CSS to build a real interface.</p>
+            <div class="path-tags">
+              <span data-i18n="week2.tag1">OOP</span>
+              <span data-i18n="week2.tag2">APIs</span>
+              <span data-i18n="week2.tag3">HTML / CSS</span>
+            </div>
+            <div class="path-visual" data-visual="webpage">
+              <div class="mini-browser">
+                <div class="mini-browser-bar"><span></span><span></span><span></span></div>
+                <div class="mini-browser-body">
+                  <div class="mini-chat-title">My AI Chatbot</div>
+                  <div class="mini-chat-input"></div>
+                  <div class="mini-chat-btn"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="path-step" data-week="3">
+          <div class="path-node">
+            <span class="path-node-num">03</span>
+          </div>
+          <div class="path-card">
+            <p class="path-week" data-i18n="week3.label">Week 3</p>
+            <h3 data-i18n="week3.title">Django Fundamentals</h3>
+            <p data-i18n="week3.body">How real websites are built. Views, URLs, templates and forms — the framework behind the chatbot you'll build next.</p>
+            <div class="path-tags">
+              <span data-i18n="week3.tag1">Views &amp; URLs</span>
+              <span data-i18n="week3.tag2">Templates</span>
+              <span data-i18n="week3.tag3">Forms</span>
+            </div>
+            <div class="path-visual" data-visual="architecture">
+              <div class="arch-diagram">
+                <div class="arch-box arch-box-1" data-i18n="week3.arch1">Browser</div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-box arch-box-2" data-i18n="week3.arch2">View</div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-box arch-box-3" data-i18n="week3.arch3">Template</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="path-step path-step-highlight" data-week="4">
+          <div class="path-node path-node-highlight">
+            <span class="path-node-num">04</span>
+          </div>
+          <div class="path-card path-card-highlight">
+            <p class="path-week" data-i18n="week4.label">Week 4</p>
+            <h3 data-i18n="week4.title">Build the AI Chatbot</h3>
+            <p data-i18n="week4.body">Connect your Django app to Google's Gemini AI. Type a message, get a real AI response — running on a website you built.</p>
+            <div class="path-tags">
+              <span data-i18n="week4.tag1">Gemini API</span>
+              <span data-i18n="week4.tag2">Live chat</span>
+              <span data-i18n="week4.tag3">Project 1 ✓</span>
+            </div>
+            <div class="path-visual" data-visual="chatbot">
+              <div class="chat-demo">
+                <div class="chat-bubble chat-bubble-user" data-i18n="week4.chat.user">What is AI?</div>
+                <div class="chat-bubble chat-bubble-bot" data-i18n="week4.chat.bot">AI is how computers learn to perform tasks that normally need human thinking.</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="path-step" data-week="5">
+          <div class="path-node">
+            <span class="path-node-num">05</span>
+          </div>
+          <div class="path-card">
+            <p class="path-week" data-i18n="week5.label">Week 5</p>
+            <h3 data-i18n="week5.title">Machine Learning Foundations</h3>
+            <p data-i18n="week5.body">How machines find patterns in data. NumPy, Pandas, visualization, and your first prediction models.</p>
+            <div class="path-tags">
+              <span data-i18n="week5.tag1">Pandas</span>
+              <span data-i18n="week5.tag2">Regression</span>
+              <span data-i18n="week5.tag3">Data viz</span>
+            </div>
+            <div class="path-visual" data-visual="chart">
+              <div class="mini-chart" aria-hidden="true">
+                <span class="bar" style="--h:35%"></span>
+                <span class="bar" style="--h:55%"></span>
+                <span class="bar" style="--h:42%"></span>
+                <span class="bar" style="--h:78%"></span>
+                <span class="bar" style="--h:64%"></span>
+                <span class="bar" style="--h:90%"></span>
+                <div class="trend-line"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="path-step path-step-highlight" data-week="6">
+          <div class="path-node path-node-highlight">
+            <span class="path-node-num">06</span>
+          </div>
+          <div class="path-card path-card-highlight">
+            <p class="path-week" data-i18n="week6.label">Week 6</p>
+            <h3 data-i18n="week6.title">Deploy the Prediction Model</h3>
+            <p data-i18n="week6.body">Turn your trained model into a live web app — enter values, get a prediction. Present both projects on showcase day.</p>
+            <div class="path-tags">
+              <span data-i18n="week6.tag1">Streamlit</span>
+              <span data-i18n="week6.tag2">Live demo</span>
+              <span data-i18n="week6.tag3">Project 2 ✓</span>
+            </div>
+            <div class="path-visual" data-visual="predictor">
+              <div class="predictor-demo">
+                <div class="predictor-row">
+                  <span data-i18n="week6.pred.label1">Study hours</span>
+                  <div class="predictor-slider"><span class="predictor-slider-fill"></span></div>
+                </div>
+                <div class="predictor-result" data-i18n="week6.pred.result">✓ Likely to pass</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section projects" id="projects">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="projects.eyebrow">What you'll walk away with</p>
+      <h2 data-i18n="projects.title">Two real applications. Built by you.</h2>
+    </div>
+    <div class="projects-grid">
+      <div class="project-tile">
+        <div class="project-tile-top">
+          <span class="project-num">01</span>
+          <span class="project-tag" data-i18n="projects.p1.tag">Project One</span>
+        </div>
+        <h3 data-i18n="projects.p1.title">An AI Chatbot</h3>
+        <p data-i18n="projects.p1.body">A working website where you can chat with an AI — built using Python and Django, powered by Google's Gemini model. Your name, your design, your chatbot.</p>
+        <div class="project-stack">
+          <span>Python</span><span>Django</span><span>Gemini API</span><span>HTML/CSS</span>
+        </div>
+      </div>
+      <div class="project-tile">
+        <div class="project-tile-top">
+          <span class="project-num">02</span>
+          <span class="project-tag" data-i18n="projects.p2.tag">Project Two</span>
+        </div>
+        <h3 data-i18n="projects.p2.title">A Prediction Model</h3>
+        <p data-i18n="projects.p2.body">A machine learning model that predicts an outcome from real data — packaged into a simple web app where anyone can enter values and see a live prediction.</p>
+        <div class="project-stack">
+          <span>Pandas</span><span>Scikit-learn</span><span>Streamlit</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ENROLL / CONTACT ============ -->
+  <section class="section enroll" id="enroll">
+    <div class="enroll-card">
+      <p class="eyebrow eyebrow-light" data-i18n="enroll.eyebrow">Ready to start?</p>
+      <h2 data-i18n="enroll.title">Seats are limited to keep batches small.</h2>
+      <p class="enroll-sub" data-i18n="enroll.sub">Live sessions mean real attention. We keep every batch small on purpose — reach out to check availability for the next cohort.</p>
+      <div class="enroll-details">
+        <a class="enroll-detail" href="https://wa.me/919359189558" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+          <span>+91 93591 89558</span>
+        </a>
+        <a class="enroll-detail" href="mailto:mrunaljadhav303@gmail.com">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><path d="M22 6l-10 7L2 6"></path></svg>
+          <span>mrunaljadhav303@gmail.com</span>
+        </a>
+      </div>
+      <p class="enroll-footnote" data-i18n="enroll.footnote">Online · Live sessions · 6 weeks · Monday, Wednesday, Friday</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p data-i18n="footer.text">Aruna's Academy — AI Explorer Program</p>
+  </footer>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
